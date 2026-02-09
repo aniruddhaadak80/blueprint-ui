@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Technical Minimalist Design System - A sophisticated structural design inspired by blueprints and high-end wireframes">
+  <title>Technical Design System | Blueprint Aesthetics</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <!-- Mosaic Background Pattern -->
+  <div class="mosaic-background">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="mosaic" x="0" y="0" width="400" height="300" patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="200" height="150" fill="#F7F7F5" stroke="#3A3A38" stroke-width="0.5"
+            stroke-opacity="0.3" />
+          <rect x="200" y="0" width="200" height="75" fill="#F7F7F5" stroke="#3A3A38" stroke-width="0.5"
+            stroke-opacity="0.3" />
+          <rect x="200" y="75" width="100" height="150" fill="#F7F7F5" stroke="#3A3A38" stroke-width="0.5"
+            stroke-opacity="0.3" />
+          <rect x="300" y="75" width="100" height="75" fill="#F7F7F5" stroke="#3A3A38" stroke-width="0.5"
+            stroke-opacity="0.3" />
+          <rect x="0" y="150" width="100" height="75" fill="#F7F7F5" stroke="#3A3A38" stroke-width="0.5"
+            stroke-opacity="0.3" />
+          <rect x="100" y="150" width="100" height="150" fill="#F7F7F5" stroke="#3A3A38" stroke-width="0.5"
+            stroke-opacity="0.3" />
+          <rect x="300" y="150" width="100" height="150" fill="#F7F7F5" stroke="#3A3A38" stroke-width="0.5"
+            stroke-opacity="0.3" />
+          <rect x="0" y="225" width="100" height="75" fill="#F7F7F5" stroke="#3A3A38" stroke-width="0.5"
+            stroke-opacity="0.3" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#mosaic)" />
+    </svg>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white" />
+          <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" />
+          <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" />
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-link">01. Features</a></li>
+        <li><a href="#pricing" class="nav-link">02. Pricing</a></li>
+        <li><a href="#integrations" class="nav-link">03. Integrations</a></li>
+        <li><a href="#docs" class="nav-link">04. Docs</a></li>
+        <li><a href="#changelog" class="nav-link">05. Changelog</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="btn btn-ghost">Sign In</a>
+        <a href="#" class="btn btn-solid">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-subtitle">
+            <span class="text-mono-lg">Design Systems v2.4</span>
+          </div>
+          <h1 class="heading-display heading-8xl hero-title">Build with<br>precision.</h1>
+          <p class="text-body hero-description">
+            A structural design system inspired by technical blueprints. Razor-sharp aesthetics,
+            seamless components, infinite possibilities. Used by 50,000+ developers worldwide.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-solid">Explore System</a>
+            <a href="#" class="btn btn-ghost" style="margin-left: 12px;">View on GitHub</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-value" data-count="48">48</span>
+              <span class="hero-stat-label">Components</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value" data-count="12">12</span>
+              <span class="hero-stat-label">Templates</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value" data-count="99">99%</span>
+              <span class="hero-stat-label">Accessible</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-graphic">
+          <div class="hero-wireframe">
+            <div class="hero-orbit"></div>
+            <div class="hero-orbit hero-orbit--2"></div>
+            <div class="hero-image-container">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=400&fit=crop"
+                alt="Abstract geometric design" class="hero-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By / Logo Cloud -->
+  <section class="logos-section">
+    <div class="container">
+      <p class="logos-label text-mono">Trusted by industry leaders</p>
+      <div class="logos-grid">
+        <div class="logo-item"><span class="logo-text">Vercel</span></div>
+        <div class="logo-item"><span class="logo-text">Linear</span></div>
+        <div class="logo-item"><span class="logo-text">Raycast</span></div>
+        <div class="logo-item"><span class="logo-text">Notion</span></div>
+        <div class="logo-item"><span class="logo-text">Figma</span></div>
+        <div class="logo-item"><span class="logo-text">Stripe</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" data-count="50000">50,000+</span>
+          <span class="stat-label text-mono">Active Developers</span>
+          <p class="stat-desc">Building production apps with our system</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="2500000">2.5M+</span>
+          <span class="stat-label text-mono">Weekly Downloads</span>
+          <p class="stat-desc">NPM package installs per week</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="99">99.9%</span>
+          <span class="stat-label text-mono">Uptime SLA</span>
+          <p class="stat-desc">Enterprise-grade reliability</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="4">4.9★</span>
+          <span class="stat-label text-mono">Developer Rating</span>
+          <p class="stat-desc">Based on 2,400+ reviews</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Feature Grid -->
+  <section id="features" class="bento-section section">
+    <div class="bento-grid bento-grid--large">
+      <div class="bento-card bento-card--wide">
+        <div class="bento-label">
+          <span class="bento-accent bento-accent--coral"></span>
+          <span class="text-mono">Component Library</span>
+        </div>
+        <h3 class="bento-title">48+ Production-Ready Components</h3>
+        <p class="bento-description">From buttons to complex data tables, every component is crafted with accessibility,
+          performance, and developer experience in mind.</p>
+        <div class="bento-mockup">
+          <div class="code-snippet">
+            <span class="code-line"><span class="code-keyword">import</span> { Button, Card, Table, Modal }</span>
+            <span class="code-line"> <span class="code-keyword">from</span> <span
+                class="code-string">'@technical/ui'</span></span>
+            <span class="code-line"></span>
+            <span class="code-line"><span class="code-keyword">export const</span> Dashboard = () => (</span>
+            <span class="code-line"> &lt;<span class="code-function">Card</span> variant=<span
+                class="code-string">"outlined"</span>&gt;</span>
+            <span class="code-line"> &lt;<span class="code-function">Table</span> data={users} columns={cols}
+              /&gt;</span>
+            <span class="code-line"> &lt;<span class="code-function">Button</span>
+              onClick={handleExport}&gt;Export&lt;/<span class="code-function">Button</span>&gt;</span>
+            <span class="code-line"> &lt;/<span class="code-function">Card</span>&gt;</span>
+            <span class="code-line">)</span>
+          </div>
+        </div>
+      </div>
+      <div class="bento-card">
+        <div class="bento-label">
+          <span class="bento-accent bento-accent--mint"></span>
+          <span class="text-mono">Design Tokens</span>
+        </div>
+        <h3 class="bento-title">Systematic Theming</h3>
+        <p class="bento-description">CSS custom properties for seamless customization.</p>
+        <div class="bento-mockup">
+          <div class="color-grid">
+            <div class="color-chip" style="background: #1A3C2B;"></div>
+            <div class="color-chip" style="background: #FF8C69;"></div>
+            <div class="color-chip" style="background: #9EFFBF;"></div>
+            <div class="color-chip" style="background: #F4D35E;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bento-card">
+        <div class="bento-label">
+          <span class="bento-accent bento-accent--gold"></span>
+          <span class="text-mono">TypeScript</span>
+        </div>
+        <h3 class="bento-title">Full Type Safety</h3>
+        <p class="bento-description">100% TypeScript with auto-complete support.</p>
+        <div class="bento-mockup">
+          <div class="code-snippet">
+            <span class="code-line"><span class="code-keyword">interface</span> ButtonProps {</span>
+            <span class="code-line"> variant: <span class="code-string">'solid'</span> | <span
+                class="code-string">'ghost'</span></span>
+            <span class="code-line"> size: <span class="code-string">'sm'</span> | <span class="code-string">'md'</span>
+              | <span class="code-string">'lg'</span></span>
+            <span class="code-line">}</span>
+          </div>
+        </div>
+      </div>
+      <div class="bento-card">
+        <div class="bento-label">
+          <span class="bento-accent bento-accent--forest"></span>
+          <span class="text-mono">Accessibility</span>
+        </div>
+        <h3 class="bento-title">WCAG 2.1 AA</h3>
+        <p class="bento-description">Built-in keyboard navigation, screen reader support, and focus management.</p>
+      </div>
+      <div class="bento-card">
+        <div class="bento-label">
+          <span class="bento-accent bento-accent--coral"></span>
+          <span class="text-mono">Performance</span>
+        </div>
+        <h3 class="bento-title">&lt;5kb Gzipped</h3>
+        <p class="bento-description">Tree-shakeable exports mean you only ship what you use.</p>
+      </div>
+      <div class="bento-card bento-card--wide">
+        <div class="bento-label">
+          <span class="bento-accent bento-accent--mint"></span>
+          <span class="text-mono">Documentation</span>
+        </div>
+        <h3 class="bento-title">Comprehensive Guides & Examples</h3>
+        <p class="bento-description">Interactive documentation with live code editors, copy-paste examples, and best
+          practices for every component.</p>
+        <div class="bento-mockup">
+          <div class="ui-mockup">
+            <div class="ui-bar" style="width: 30%; background: var(--forest); opacity: 0.4;"></div>
+            <div class="ui-bar ui-bar--medium"></div>
+            <div class="ui-bar ui-bar--short"></div>
+            <div style="height: 12px;"></div>
+            <div class="ui-bar" style="width: 25%; background: var(--forest); opacity: 0.4;"></div>
+            <div class="ui-bar" style="width: 90%;"></div>
+            <div class="ui-bar ui-bar--medium"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="process-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">Process</span>
+        </div>
+        <h2 class="heading-display heading-6xl">How it works.</h2>
+        <p class="section-desc text-body">Get started in minutes, not hours.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="process-number text-mono">01</span>
+          <h3 class="process-title">Install Package</h3>
+          <p class="process-desc">Add our package to your project with npm or yarn.</p>
+          <div class="process-code">
+            <code class="text-mono-md">npm install @technical/ui</code>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-number text-mono">02</span>
+          <h3 class="process-title">Import Components</h3>
+          <p class="process-desc">Import only what you need for optimal bundle size.</p>
+          <div class="process-code">
+            <code class="text-mono-md">import { Button } from '@technical/ui'</code>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-number text-mono">03</span>
+          <h3 class="process-title">Customize Theme</h3>
+          <p class="process-desc">Override CSS variables to match your brand.</p>
+          <div class="process-code">
+            <code class="text-mono-md">--primary: #1A3C2B;</code>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="process-number text-mono">04</span>
+          <h3 class="process-title">Ship to Production</h3>
+          <p class="process-desc">Deploy with confidence using battle-tested components.</p>
+          <div class="process-code">
+            <code class="text-mono-md">npm run build && deploy</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Showcase -->
+  <section id="components" class="components-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">Components</span>
+        </div>
+        <h2 class="heading-display heading-6xl">Precision-crafted<br>elements.</h2>
+      </div>
+      <div class="components-grid">
+        <div class="component-showcase">
+          <span class="component-title">Network Topology Graph</span>
+          <div class="network-container">
+            <svg class="network-lines" viewBox="0 0 280 280">
+              <line class="network-line" x1="140" y1="140" x2="140" y2="0" />
+              <line class="network-line" x1="140" y1="140" x2="280" y2="210" />
+              <line class="network-line" x1="140" y1="140" x2="0" y2="210" />
+            </svg>
+            <div class="network-orbit"></div>
+            <div class="network-nodes">
+              <div class="network-node network-node--1"></div>
+              <div class="network-node network-node--2"></div>
+              <div class="network-node network-node--3"></div>
+            </div>
+            <div class="network-center"></div>
+          </div>
+        </div>
+        <div class="component-showcase">
+          <span class="component-title">Status Indicators</span>
+          <div style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+            <span class="status-badge"><span class="status-dot"></span><span class="status-text">System
+                Online</span></span>
+            <span class="status-badge"><span class="status-dot" style="background-color: var(--coral);"></span><span
+                class="status-text" style="color: var(--coral);">Maintenance</span></span>
+            <span class="status-badge"><span class="status-dot" style="background-color: var(--gold);"></span><span
+                class="status-text" style="color: var(--gold);">Processing</span></span>
+            <span class="status-badge"><span class="status-dot" style="background-color: var(--mint);"></span><span
+                class="status-text" style="color: #1A8C4B;">Completed</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">Pricing</span>
+        </div>
+        <h2 class="heading-display heading-6xl">Simple, transparent<br>pricing.</h2>
+        <p class="section-desc text-body">Start free. Scale as you grow.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="pricing-tier text-mono">Starter</span>
+            <div class="pricing-price">
+              <span class="pricing-amount">$0</span>
+              <span class="pricing-period text-mono">/month</span>
+            </div>
+            <p class="pricing-desc">Perfect for side projects and learning.</p>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-feature"><span class="check-icon">✓</span> All 48 components</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Basic documentation</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Community support</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> MIT License</li>
+            <li class="pricing-feature pricing-feature--disabled"><span class="check-icon">—</span> Premium templates
+            </li>
+            <li class="pricing-feature pricing-feature--disabled"><span class="check-icon">—</span> Priority support
+            </li>
+          </ul>
+          <a href="#" class="btn btn-ghost btn-full">Get Started Free</a>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge text-mono">Most Popular</div>
+          <div class="pricing-header">
+            <span class="pricing-tier text-mono">Pro</span>
+            <div class="pricing-price">
+              <span class="pricing-amount">$29</span>
+              <span class="pricing-period text-mono">/month</span>
+            </div>
+            <p class="pricing-desc">For professional developers and teams.</p>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-feature"><span class="check-icon">✓</span> Everything in Starter</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> 12 premium templates</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Figma design files</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Priority email support</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Advanced theming</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Private Discord</li>
+          </ul>
+          <a href="#" class="btn btn-solid btn-full">Start 14-Day Trial</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <span class="pricing-tier text-mono">Enterprise</span>
+            <div class="pricing-price">
+              <span class="pricing-amount">Custom</span>
+            </div>
+            <p class="pricing-desc">For large organizations with custom needs.</p>
+          </div>
+          <ul class="pricing-features">
+            <li class="pricing-feature"><span class="check-icon">✓</span> Everything in Pro</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Custom components</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Dedicated support</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> SLA guarantee</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> On-premise deployment</li>
+            <li class="pricing-feature"><span class="check-icon">✓</span> Training sessions</li>
+          </ul>
+          <a href="#" class="btn btn-ghost btn-full">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Comparison Table -->
+  <section class="comparison-section section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="heading-display heading-4xl">Feature Comparison</h2>
+      </div>
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="text-mono">Feature</th>
+              <th class="text-mono">Starter</th>
+              <th class="text-mono">Pro</th>
+              <th class="text-mono">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Core Components</td>
+              <td>48</td>
+              <td>48</td>
+              <td>48 + Custom</td>
+            </tr>
+            <tr>
+              <td>Templates</td>
+              <td>3</td>
+              <td>12</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Figma Files</td>
+              <td>—</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>TypeScript</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Dark Mode</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Priority Support</td>
+              <td>—</td>
+              <td>✓</td>
+              <td>24/7</td>
+            </tr>
+            <tr>
+              <td>Custom Theming</td>
+              <td>Basic</td>
+              <td>Advanced</td>
+              <td>Full</td>
+            </tr>
+            <tr>
+              <td>SLA</td>
+              <td>—</td>
+              <td>—</td>
+              <td>99.9%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section id="integrations" class="integrations-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">Integrations</span>
+        </div>
+        <h2 class="heading-display heading-6xl">Works with your<br>favorite tools.</h2>
+      </div>
+      <div class="integrations-grid">
+        <div class="integration-card"><span class="integration-name">React</span><span
+            class="integration-status text-mono">Official</span></div>
+        <div class="integration-card"><span class="integration-name">Next.js</span><span
+            class="integration-status text-mono">Official</span></div>
+        <div class="integration-card"><span class="integration-name">Vue</span><span
+            class="integration-status text-mono">Official</span></div>
+        <div class="integration-card"><span class="integration-name">Svelte</span><span
+            class="integration-status text-mono">Community</span></div>
+        <div class="integration-card"><span class="integration-name">Remix</span><span
+            class="integration-status text-mono">Official</span></div>
+        <div class="integration-card"><span class="integration-name">Astro</span><span
+            class="integration-status text-mono">Official</span></div>
+        <div class="integration-card"><span class="integration-name">Vite</span><span
+            class="integration-status text-mono">Official</span></div>
+        <div class="integration-card"><span class="integration-name">Webpack</span><span
+            class="integration-status text-mono">Official</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Changelog/Timeline -->
+  <section id="changelog" class="timeline-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">Changelog</span>
+        </div>
+        <h2 class="heading-display heading-6xl">What's new.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date text-mono">Feb 2025</span>
+            <h3 class="timeline-title">v2.4.0 — Performance Update</h3>
+            <p class="timeline-desc">50% faster rendering, new lazy loading support, improved SSR hydration.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Performance</span>
+              <span class="timeline-tag">SSR</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date text-mono">Jan 2025</span>
+            <h3 class="timeline-title">v2.3.0 — New Components</h3>
+            <p class="timeline-desc">Added DatePicker, TimePicker, Calendar, and DataGrid components.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Components</span>
+              <span class="timeline-tag">Forms</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date text-mono">Dec 2024</span>
+            <h3 class="timeline-title">v2.2.0 — Dark Mode</h3>
+            <p class="timeline-desc">Complete dark mode support with automatic system preference detection.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Theming</span>
+              <span class="timeline-tag">A11y</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date text-mono">Nov 2024</span>
+            <h3 class="timeline-title">v2.1.0 — Accessibility Audit</h3>
+            <p class="timeline-desc">WCAG 2.1 AA compliance across all components, improved keyboard navigation.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">A11y</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonial-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">Testimonials</span>
+        </div>
+        <h2 class="heading-display heading-6xl">Trusted by<br>builders.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <svg class="quote-icon" viewBox="0 0 24 24">
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+            </svg>
+            <div class="star-rating">
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+            </div>
+          </div>
+          <p class="testimonial-body">"The precision and attention to detail in this design system is remarkable. It
+            transformed our product's entire visual language in weeks."</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar"><img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
+                alt="Alex Chen"></div>
+            <div class="testimonial-info"><span class="testimonial-name">Alex Chen</span><span
+                class="testimonial-title">Lead Designer, Vercel</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <svg class="quote-icon" viewBox="0 0 24 24">
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+            </svg>
+            <div class="star-rating">
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+            </div>
+          </div>
+          <p class="testimonial-body">"Finally, a system that understands the importance of negative space and
+            structural hierarchy. Pure engineering meets pure design."</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar"><img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
+                alt="Sarah Miller"></div>
+            <div class="testimonial-info"><span class="testimonial-name">Sarah Miller</span><span
+                class="testimonial-title">CTO, Linear</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <svg class="quote-icon" viewBox="0 0 24 24">
+              <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+            </svg>
+            <div class="star-rating">
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+              <svg class="star" viewBox="0 0 10 10">
+                <polygon points="5,0 6.2,3.8 10,3.8 7,6.2 8.2,10 5,7.6 1.8,10 3,6.2 0,3.8 3.8,3.8" />
+              </svg>
+            </div>
+          </div>
+          <p class="testimonial-body">"The hairline borders and mosaic patterns give our app a distinctive technical
+            aesthetic. Users constantly ask how we built it."</p>
+          <div class="testimonial-footer">
+            <div class="testimonial-avatar"><img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+                alt="James Park"></div>
+            <div class="testimonial-info"><span class="testimonial-name">James Park</span><span
+                class="testimonial-title">Founder, Raycast</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">Team</span>
+        </div>
+        <h2 class="heading-display heading-6xl">Built by experts.</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar"><img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&crop=face"
+              alt="Marcus Webb"></div>
+          <h3 class="team-name">Marcus Webb</h3>
+          <span class="team-role text-mono">Founder & CEO</span>
+          <p class="team-bio">Former design lead at Stripe. 15+ years building design systems.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><img
+              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=200&fit=crop&crop=face"
+              alt="Elena Rodriguez"></div>
+          <h3 class="team-name">Elena Rodriguez</h3>
+          <span class="team-role text-mono">Head of Design</span>
+          <p class="team-bio">Ex-Figma. Specializes in systematic design and accessibility.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&crop=face"
+              alt="David Kim"></div>
+          <h3 class="team-name">David Kim</h3>
+          <span class="team-role text-mono">Lead Engineer</span>
+          <p class="team-bio">React core contributor. Performance optimization expert.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar"><img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face"
+              alt="Ava Thompson"></div>
+          <h3 class="team-name">Ava Thompson</h3>
+          <span class="team-role text-mono">Developer Advocate</span>
+          <p class="team-bio">Technical writer and educator. 100k+ YouTube subscribers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">FAQ</span>
+        </div>
+        <h2 class="heading-display heading-6xl">Common questions.</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is Technical UI free to use?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! The core library with all 48 components is completely free and MIT licensed. You can use it in
+              personal and commercial projects without any restrictions.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need to know React to use this?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>While our primary package is built for React, we also offer official Vue and Svelte ports. Web Components
+              support is coming in Q2 2025.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does the Pro plan differ from Starter?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Pro includes 12 premium templates, Figma design files, priority support, advanced theming options, and
+              access to our private Discord community.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I customize the design tokens?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. All design tokens are exposed as CSS custom properties. Override them at the root level to
+              apply your brand colors, typography, and spacing system-wide.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is server-side rendering supported?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, all components support SSR out of the box. We have first-class integrations with Next.js, Remix, and
+              other SSR frameworks.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What about accessibility?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Every component is WCAG 2.1 AA compliant with proper ARIA labels, keyboard navigation, and screen reader
+              support built in.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources/Blog Section -->
+  <section class="resources-section section">
+    <div class="container">
+      <div class="section-header">
+        <div class="status-badge section-label">
+          <span class="status-dot"></span>
+          <span class="status-text">Resources</span>
+        </div>
+        <h2 class="heading-display heading-6xl">Learn & explore.</h2>
+      </div>
+      <div class="resources-grid">
+        <article class="resource-card">
+          <div class="resource-image">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop"
+              alt="Code on screen">
+          </div>
+          <div class="resource-content">
+            <span class="resource-tag text-mono">Tutorial</span>
+            <h3 class="resource-title">Building a Dashboard with Technical UI</h3>
+            <p class="resource-excerpt">Learn how to create a production-ready admin dashboard using our component
+              library.</p>
+            <span class="resource-meta text-mono">8 min read · Feb 2025</span>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-image">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop"
+              alt="Design system">
+          </div>
+          <div class="resource-content">
+            <span class="resource-tag text-mono">Guide</span>
+            <h3 class="resource-title">Theming Best Practices</h3>
+            <p class="resource-excerpt">Deep dive into our design token system and advanced customization techniques.
+            </p>
+            <span class="resource-meta text-mono">12 min read · Jan 2025</span>
+          </div>
+        </article>
+        <article class="resource-card">
+          <div class="resource-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics">
+          </div>
+          <div class="resource-content">
+            <span class="resource-tag text-mono">Case Study</span>
+            <h3 class="resource-title">How Linear Rebuilt Their UI</h3>
+            <p class="resource-excerpt">An inside look at how Linear achieved 60% faster load times with our system.</p>
+            <span class="resource-meta text-mono">6 min read · Dec 2024</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="heading-display heading-6xl">Ready to build?</h2>
+        <p class="cta-desc text-body">Join 50,000+ developers building with precision.</p>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-solid">Get Started Free</a>
+          <a href="#" class="btn btn-ghost">Schedule Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form CTA -->
+  <section class="form-section section">
+    <div class="container">
+      <div class="form-container">
+        <span class="corner-marker corner-marker--tl"></span>
+        <span class="corner-marker corner-marker--tr"></span>
+        <span class="corner-marker corner-marker--bl"></span>
+        <span class="corner-marker corner-marker--br"></span>
+        <div class="form-header">
+          <h2 class="form-title">Get Early Access</h2>
+          <p class="form-subtitle">Join the waitlist for v3.0 features</p>
+        </div>
+        <form class="form-fields" id="signup-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="firstName">First Name</label>
+              <input type="text" class="form-input" id="firstName" placeholder="John">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lastName">Last Name</label>
+              <input type="text" class="form-input" id="lastName" placeholder="Doe">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input type="email" class="form-input" id="email" placeholder="john@company.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="company">Company (Optional)</label>
+            <input type="text" class="form-input" id="company" placeholder="Acme Inc.">
+          </div>
+          <button type="submit" class="btn btn-solid btn-full form-submit">Join Waitlist</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extended Footer -->
+  <footer class="footer-extended">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 16px;">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="white" />
+              <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" />
+              <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" />
+            </svg>
+          </div>
+          <p class="footer-tagline">Build with precision.<br>Ship with confidence.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Discord</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-heading text-mono">Product</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Components</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-heading text-mono">Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Examples</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-heading text-mono">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-heading text-mono">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">License</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright text-mono">© 2025 Technical Design System. All rights reserved.</span>
+        <div class="footer-status">
+          <span class="status-badge"><span class="status-dot"></span><span class="status-text">All Systems
+              Operational</span></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
